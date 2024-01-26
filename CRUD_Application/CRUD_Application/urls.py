@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', include('simple_crud_app.urls'))
+    path('user/', include('simple_crud_app.urls')),
+    path('stream/', include('streaming_response_app.urls'))
 ]
